@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InfrastructureManager</title>
+	<%= stylesheet_link_tag 'bootstrap.min.css' %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+	<h1>Infrastructure</h1>
+
+	<div class="row">
+	  <div class="span12">
+	  	<%= yield %>
+	  </div>
+	</div>
+</div>
+
+</body>
+</html>

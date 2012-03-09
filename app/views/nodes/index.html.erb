@@ -1,0 +1,18 @@
+<h2>Nodes</h2>
+
+<table class="table-condensed table-striped table table-bordered">
+	<thead>
+		<tr>
+			<th>Address</th>
+			<th>Operating System</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @addresses.each do |address| -%>
+		<tr>
+			<td><%= address %></td>
+			<td><%= address.node.hostname %></td>
+		</tr>
+		<% end -%>
+	</tbody>
+</table>
